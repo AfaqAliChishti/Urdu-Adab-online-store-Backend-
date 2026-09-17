@@ -7,7 +7,7 @@ export const addBook = async (req, res) => {
             Title,
             Author,
             Genre,
-            price,
+            Price,
             Description
         } = req.body;
 
@@ -35,7 +35,7 @@ export const addBook = async (req, res) => {
             Title,
             Author,
             Genre,
-            price,
+            Price,
             Description,
             image: cloudinaryResponse.secure_url
         });

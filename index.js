@@ -25,7 +25,7 @@ import router from "./src/routes/book.route.js";
 import { getBook } from "./src/controllers/getBook.controller.js";
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 
 // Middleware
@@ -39,6 +39,7 @@ connectDB();
 app.use("/api/books", router);
 
 
+
 app.listen(port, () =>{
-    console.log(`Backend running at http://localhost:${port}/`)
+    console.log(`Backend running at http://localhost:${port}`)
 });

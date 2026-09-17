@@ -13,7 +13,7 @@ const booksSchema = new Schema({
         type: String,
         required: true
     },
-    price:{
+    Price:{
         type: Number,
         required: true
     },

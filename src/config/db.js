@@ -8,10 +8,11 @@ dns.setServers([
 
 const connectDB = async ()=>{
     try {
-       await mongoose.connect(`${process.env.DB_URL}${process.env.DB_NAME}`)
-       await(console.log("Mongoose connected successfully"))
+        console.log(`enting in db ${process.env.DB_URL} and the name is ${process.env.DB_NAME}`)
+       await mongoose.connect(`${process.env.DB_URL}${process.env.DB_NAME}`);
+        console.log("Mongoose connected successfully");
     } catch (error) {
-        console.log("Error while connecting to Database", error)
+        console.log("Error while connecting to Database error part", error)
     }
 }
 
